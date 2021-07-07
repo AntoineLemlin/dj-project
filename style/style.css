@@ -407,3 +407,72 @@ p.text-about-dj-angerone{
     font-weight: 500;
     padding: 15px 0;
 }
+
+
+/* Partners & sponsors */
+
+.partners{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 470px;
+    width: 100%;
+    background-image: url(../img/homepage-sponsors-background.jpg);
+    background-size: cover;
+    background-position: right -560px;
+    background-repeat: repeat;
+    position: relative;
+    z-index: 1;
+    color: white;
+
+}
+
+.partners::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 470px;
+    width: 100%;
+    background-image: url(../img/homepage-sponsors-background.jpg);
+    clip-path: inset(350px 0 0 0);
+    background-position: center -190px;
+    z-index: 0;
+    
+}
+
+.partners h2 {
+    color: white;
+    font-family: Poppins;
+    font-size: 35px;
+    margin-top: -160px;
+}
+
+.logos-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 50px 0;
+
+}
+
+.logos-container li{
+    height: 30px;
+    width: auto;
+}
+
+.logos-container li a{
+    height: 30px;
+    width: auto;
+    text-decoration: none;
+}
+
+.logos-container li a img{
+    height: 100px;
+    width: auto;
+    filter: invert(100%) hue-rotate(130deg) brightness(100%) contrast(100%);
+}
+
