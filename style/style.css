@@ -125,3 +125,11 @@
     height: 100%;
     width: auto;
 }
+
+
+/* join-fan-base */
+
+.join-fan-base{
+    height: 100vh;
+    background-image: url(../img/.jpg);
+}
