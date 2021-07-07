@@ -5,6 +5,71 @@
     margin: 0;
 }
 
+/* HOMEPAGE */
+
+/* HEADER */
+
+header {
+    background-image: url(../img/homapage-banner-img.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding: 1rem;
+}
+
+.homepage-banner {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.logo {
+    margin-left: 14rem;
+    margin-top: 1rem;
+}
+
+.homepage-nav {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 6rem;
+}
+
+.li-nav {
+    margin-left: 4rem;
+    color: white;
+    margin-top: 2rem;
+}
+
+.li-nav-item {
+    margin-left: 2rem;
+}
+
+.réseaux-sociaux {
+    margin-top: 2rem;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin-left: 3rem;
+}
+
+ul a {
+    margin-left: 2rem;
+    color: white;
+    opacity: 0.50;
+}
+
+/* HEADER */
+
+
+
+
+
 
 /*About DJ Angerone*/
 
