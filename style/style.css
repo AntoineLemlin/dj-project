@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin 0;
+}
+
+
+/*About DJ Angerone*/
+
+.about-dj-angerone{
+    display: grid;
+    grid: repeat (2);
+    background-color: white;
+}
+
+.text-about-dj-angerone{
+    word-spacing: 0.2rem;
+    font-family: 'Poppins', sans-serif;
+    color:#444444;
+    width: 550px;
+    margin-top: 12rem;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.title-about-dj-angerone{
+    color: #282828;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 0%;
+}
+
+p.text-about-dj-angerone{
+    font-size: 25px;
+    margin: 1.25rem;
+    margin-left: 3rem;
+    margin-bottom: 3rem;
+    width: 500px;
+    
+}
+
+.img-about-dj-angerone{
+    border-radius: 2%;
+    margin: auto;
+    margin-top: 12rem;
+    grid-column: 1;
+    grid-row: 1;
+    z-index: 1;
+}
+
+.rectangle-thin-1{
+    width: 10px;
+	height: 40px;
+	background:#8121e0;
+    position: absolute;
+    grid-column: 1;
+    grid-row: 1;
+    top: 53%;
+    left: 35%;
+    z-index: 2;
+}
+
+.rectangle-thin-2{
+    width: 10px;
+	height: 40px;
+	background:#8121e0;
+    position: absolute;
+    grid-column: 1;
+    grid-row: 1;
+    top: 53%;
+    left: 36%;
+    z-index: 2;
+}
+
+.rectangle-bold{
+    width: 20px;
+	height: 40px;
+	background:#8121e0;
+    position: absolute;
+    grid-column: 1;
+    grid-row: 1;
+    top: 19%;
+    left: 14%;
+    z-index: 2;
+}
