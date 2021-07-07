@@ -12,6 +12,8 @@
     display: grid;
     grid: repeat (2);
     background-color: white;
+    min-height: 86vh;
+    width: 100%;
 }
 
 .text-about-dj-angerone{
@@ -146,9 +148,10 @@ p.text-about-dj-angerone{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 100vh;
+    height: auto;
     width: 100%;
     font-family: Poppins;
+    padding: 160px 0;
 }
 
 .latest-releases h2{
@@ -210,6 +213,7 @@ p.text-about-dj-angerone{
 /* join-fan-base */
 
 .join-fan-base{
-    height: 100vh;
+    height: auto;
+    width: 100%;
     background-image: url(../img/.jpg);
 }
