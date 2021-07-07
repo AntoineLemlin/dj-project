@@ -16,8 +16,10 @@
 
 .text-about-dj-angerone{
     word-spacing: 0.2rem;
-    font-family: 'Poppins', sans-serif;
-    color:#444444;
+    font-family: 'Poppins';
+    color:grey;
+    font-weight: 300;
+    line-height: 25px;
     width: 550px;
     margin-top: 12rem;
     grid-column: 2;
@@ -25,8 +27,8 @@
 }
 
 .title-about-dj-angerone{
-    color: #282828;
-    font-size: 30px;
+    color: black;
+    font-size: 36px;
     font-weight: bold;
     margin-bottom: 0%;
 }
