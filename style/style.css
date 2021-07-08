@@ -684,3 +684,96 @@ p.text-about-dj-angerone{
     filter: invert(100%) hue-rotate(130deg) brightness(100%) contrast(100%);
 }
 
+/* TICKETS */
+
+.tickets {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tickets h2 {
+    text-align: center;
+    margin: 120px 0;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 35px;
+}
+
+.price {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    width: 1200px;
+    margin-bottom: 100px;
+}
+
+.price-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.price-item h4 {
+    font-family: Poppins;
+    font-weight: normal;
+    font-size: 12px;
+    color: rgb(61, 61, 61);
+}
+
+.price-item p {
+    font-family: Poppins;
+    font-weight: normal;
+    font-size: 65px;
+    color: rgb(61, 61, 61);
+}
+
+.dollar {
+    font-family: Poppins;
+    font-weight: normal;
+    font-size: 14px;
+    color: rgb(61, 61, 61);
+    position: relative;
+    bottom: 37px;
+}
+
+.info-price-container {
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: lighter;
+    list-style-type: none;
+    color: rgb(61, 61, 61);
+}
+
+.price-item button {
+    height: 45px;
+    width: 100px;
+    margin-top: 50px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.price-item button:hover {
+    height: 45px;
+    width: 100px;
+    margin-top: 50px;
+    background-color: #8121e0;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.vertical { 
+    border-left: 1px solid;
+    color: rgb(230, 230, 230);
+    height: 300px; 
+    display: inline-block;
+}
+
