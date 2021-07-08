@@ -57,7 +57,73 @@ header {
     margin-left: 2rem;
 }
 
+/* Button */
+
+/* Absolute Center */
+.abs-center{
+	margin: auto;
+	position: fixed;
+	top:0; right:0; bottom:0; left:0;
+}
+/*Container for audio player*/
+#audioplayer{
+	width: 80%;
+	height: 60px;
+	margin: auto;
+	margin-top: 50px;
+}
+/* Play/Pause Button */
+#pButton{
+	height:60px;
+	width: 60px;
+	border: none;
+	background-size: 50% 50%;
+	background-repeat: no-repeat;
+	background-position: center;
+	float:left;
+	outline:none;
+    margin-top: -10px;
+
+}
+/*Classes for play/pause button background*/
+.play{background: url('../img/play.png') ;}
+.pause{background: url('../img/pause.png') ;}
+
+#timeline{
+	width: 85%;
+	height: 5px;
+	background: rgb(255, 255, 255);
+	float: left;
+	border-radius: 15px;
+    opacity: 0.5;
+}
+
+.timeline_time{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+/*Grabable Playhead*/
+#playhead{
+	cursor: pointer;
+	width: 5px;
+	height: 30px;
+    opacity: 1;
+	margin-top: -11px;
+	background: black;
+}
+
+.musicTime{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    font-family: Poppins;
+    font-size: 25px;
+}
 /* BURGER MENU */
+
 
 /* BURGER MENU */
 
@@ -406,6 +472,7 @@ p.text-about-dj-angerone{
     color: white;
     font-family: Poppins;
     z-index: -1;
+    flex-wrap: wrap;
 }
 
 .pictures{
@@ -416,12 +483,14 @@ p.text-about-dj-angerone{
     justify-content: center;
     align-items: center;
     margin-right: 200px;
+    flex-wrap: wrap;
 }
 
 .row{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .row1{
@@ -539,6 +608,7 @@ p.text-about-dj-angerone{
     position: relative;
     z-index: 1;
     color: white;
+    text-align: center;
 
 }
 

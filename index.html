@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
+    <script src="script.js"></script>
+    <link rel="icon" href="img/favicon.ico">
     <title>DJ Angerone</title>
 </head>
 
@@ -43,6 +45,29 @@
                 <h3 class="new-single">New Single</h3>
                 <p class="feel-the-rhythm">Feel the Rhythm</p>
             </div>
+
+            <div class="musicbar">
+                <audio id="music" preload="true">
+                    <source src="music/DJSnake.mp3">
+                </audio>
+                <div id="wrapper">
+                    <!--Audio Player Interface-->
+                    <div id="audioplayer">
+                        <button id="pButton" class="play"></button>
+                        <div class="timeline_time">
+                            <div id="timeline">
+                                <div id="playhead"></div>
+                            </div>
+                            <div class="musicTime">
+                                <p id="lenght">3:36</p><p> - 3:36</p>
+                             </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        
         </header>
 
         <section class="next-gig">
@@ -76,6 +101,7 @@
         </section>
 
         <section class="about-dj-angerone">
+            <img class="img-about-dj-angerone" src="img/home-dj.jpg" alt="DJ Angerone">
             <div class="text-about-dj-angerone">
                 <h2 class="title-about-dj-angerone">About DJ Angerone</h2>
                 <p>Mike Myers, professionnaly known as DJ Angerone, is internationally acclaimed Progressive House & Trance DJ & musician.</p>
@@ -85,7 +111,6 @@
             <div class="rectangle-thin-1"></div>
             <div class="rectangle-thin-2"></div>
             <div class="rectangle-bold"></div>
-                <img class="img-about-dj-angerone" src="img/home-dj.jpg" alt="DJ Angerone">
         </section>
         
         <section class="view-discography">
