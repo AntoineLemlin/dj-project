@@ -420,8 +420,7 @@ p.text-about-dj-angerone{
     width: 100%;
     background-image: url(../img/homepage-sponsors-background.jpg);
     background-size: cover;
-    background-position: right -560px;
-    background-repeat: repeat;
+    background-position: right -650px;
     position: relative;
     z-index: 1;
     color: white;
@@ -438,15 +437,38 @@ p.text-about-dj-angerone{
     background-image: url(../img/homepage-sponsors-background.jpg);
     clip-path: inset(350px 0 0 0);
     background-position: center -190px;
-    z-index: 0;
+    z-index: -1;
     
+}
+
+.partners::after{
+    content: "";
+    height: 470px;
+    width: 100%;
+    position: absolute;
+    background-color: black;
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 
 .partners h2 {
     color: white;
     font-family: Poppins;
     font-size: 35px;
-    margin-top: -160px;
+}
+
+.partners .dots i{
+    font-size: 13px;
+    color: white;
+    opacity: 0.3;
+    margin-left: 2rem;
+}
+
+.partners .dots i:nth-child(1){
+    color: #8121e0;
+    opacity: 1;
 }
 
 .logos-container{
@@ -455,23 +477,23 @@ p.text-about-dj-angerone{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 50px 0;
+    margin: 55px 0;
 
 }
 
 .logos-container li{
-    height: 30px;
+    height: 100px;
     width: auto;
+    margin-left: 5rem;
 }
 
 .logos-container li a{
-    height: 30px;
     width: auto;
     text-decoration: none;
 }
 
 .logos-container li a img{
-    height: 100px;
+    height: 100%;
     width: auto;
     filter: invert(100%) hue-rotate(130deg) brightness(100%) contrast(100%);
 }
