@@ -66,7 +66,102 @@ ul a {
 
 /* HEADER */
 
+/* Next Gig */
 
+.next-gig{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 75%;
+    height: auto;
+    background-color: #202020;
+    position: absolute;
+    left: 12%;
+    top: 90%;
+    border-radius: 10px;
+    padding: 50px 0 65px 0;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 0 5px 10px 0 darkslategray;
+}
+
+.next-gig::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/spectrum.png);
+    background-position: center;
+    background-size: cover;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+.btn-buy-tickets{
+    text-decoration: none;
+    color: white;
+    background-color: #8121e0;
+    padding: 25px 60px;
+    border-radius: 5px;
+    font-family: Poppins;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    margin-left: 6rem;
+    white-space:nowrap;
+}
+
+
+.next-gig .text{
+    width: 200px;
+    height: auto;
+    font-family: Poppins;
+}
+
+.next-gig h3{
+        font-size: 45px;
+        font-weight: 500;
+        text-transform: capitalize;
+}
+
+.next-gig p{
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.next-gig .countdown h2{
+    font-family: Poppins;
+    font-size: 90px;
+    font-weight: 400;
+}
+
+.next-gig .countdown h5{
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 10px;
+    margin-top: -15px;
+    opacity: 0.7;
+}
+
+.countdown{
+    display: flex;
+    flex-direction: row;
+    margin-top: -20px;
+}
+
+.next-gig .countdown div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 5rem;
+}
 
 
 
@@ -485,6 +580,7 @@ p.text-about-dj-angerone{
     height: 100px;
     width: auto;
     margin-left: 5rem;
+    list-style-type: none;
 }
 
 .logos-container li a{
