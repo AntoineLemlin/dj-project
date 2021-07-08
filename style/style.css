@@ -71,14 +71,14 @@ header {
 .next-gig{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     color: white;
-    width: 75%;
+    width: 85%;
     height: auto;
     background-color: #202020;
     position: absolute;
-    left: 12%;
+    left: 8%;
     top: 90%;
     border-radius: 10px;
     padding: 50px 0 65px 0;
@@ -156,11 +156,17 @@ header {
     margin-top: -20px;
 }
 
+
 .next-gig .countdown div{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 5rem;
+    margin-left: 4rem;
+}
+
+
+.countdown-days{
+    margin-left: 0;
 }
 
 .new-single {
