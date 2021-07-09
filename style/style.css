@@ -926,6 +926,8 @@ p.text-about-dj-angerone{
     display: inline-block;
 }
 
+/* Recent News */
+
 .recent-news{
     width: 100%;
     height: auto;
@@ -1017,4 +1019,77 @@ p.text-about-dj-angerone{
 
 .recent-news .dots i:nth-child(2){
     color: grey;
+}
+
+
+/* Footer */
+
+footer{
+    background-color: #202020;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    font-family: Poppins;
+}
+
+footer .logo-footer{
+    margin-top: 120px;
+    height: 50px;
+    width: auto;
+}
+
+footer .logo-footer img{
+    height: 100%;
+    width: auto;
+}
+
+.footer-nav{
+    display: flex;
+    list-style: none;
+    color: white;
+    margin-top: 65px;
+    font-size: 30px;
+    padding: 0;
+}
+
+.footer-nav li{
+    font-weight: 500;
+    margin-left: 55px;
+}
+
+.footer-soc{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    color: white;
+    margin-top: 65px;
+    font-size: 30px;
+    margin-bottom: 100px;
+}
+
+.footer-soc li{
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-soc li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #282828;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+footer h5{
+    margin-bottom: 130px;
+    text-align: center;
+    color: white;
 }
