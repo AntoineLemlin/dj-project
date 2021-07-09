@@ -885,6 +885,7 @@ p.text-about-dj-angerone{
 .tickets {
     background-color: white;
     width: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -903,14 +904,17 @@ p.text-about-dj-angerone{
     display: flex;
     justify-content: space-around;
     text-align: center;
-    width: 1200px;
-    margin-bottom: 100px;
+    width: auto;
+    flex-wrap: wrap;
+    
 }
 
 .price-item {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 368px;
+    height: 477px;
 }
 
 .price-item h4 {
@@ -1355,5 +1359,9 @@ button[type=submit]{
 
     #container-schedule{
         width: 95%;
+    }
+
+    .partners h2{
+        font-size: 4vw;
     }
     }
