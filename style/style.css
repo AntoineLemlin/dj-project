@@ -83,9 +83,10 @@ ul a {
 
 .text-about-dj-angerone{
     word-spacing: 0.2rem;
+    font-weight: 300;
     font-family: 'Poppins', sans-serif;
-    color:#444444;
-    width: 550px;
+    color: gray;
+    width: 570px;
     margin-top: 12rem;
     grid-column: 2;
     grid-row: 1;
@@ -93,7 +94,7 @@ ul a {
 
 .title-about-dj-angerone{
     color: #282828;
-    font-size: 30px;
+    font-size: 36px;
     font-weight: bold;
     margin-bottom: 0%;
 }
@@ -282,3 +283,110 @@ p.text-about-dj-angerone{
     width: 100%;
     background-image: url(../img/.jpg);
 }
+
+
+/* Tour Schedule */
+
+.tour-schedule h2{
+    font-family: Poppins;
+    text-align: center;
+    font-size: 36px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: auto;
+}
+
+#container-schedule{
+    font-family: Poppins;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: auto;
+    height: 700px;
+    width: 1000px;
+    border: solid grey 0.5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-bottom: 100px;
+}
+
+.months{
+    display: inline-flex;
+    justify-content: space-around;
+    background-color: black;
+    text-align: center;
+    color: gray;
+    flex-grow: 2;
+    font-size: 18px;
+    font-weight: bold;
+    height: 50px;
+    margin: 0 auto;
+    padding-top: 8px;
+    width: 1000px;
+}
+
+.march:hover{
+    border-bottom: 5px solid purple;
+}
+
+.april:hover{
+    border-bottom: 5px solid purple;
+}
+
+.may:hover{
+    border-bottom: 5px solid purple;
+}
+
+.timeline-content{
+    margin: auto;
+    margin-left: 60px;
+    padding: 30px;
+    padding-left: 60px;
+    border-left: 0.2px solid lightslategray;
+    position: relative;
+    width: 600px;
+}
+
+.timeline-content:before{
+    content: '';
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    border: 0.5px solid lightslategray;
+    position: absolute;
+    top: 40px;
+    left: -15px;
+}
+
+.date{
+    margin: auto;
+    padding: 10px;
+    padding-left: 0px;
+    font-size: 20px;
+    color: gray;
+}
+
+.timeline-content h3{
+    font-size: 18px;
+}
+
+
+.txt-13-march{
+    width: 500px;
+    font-size: 12px;
+    font-weight: 100;
+    padding-top: 20px;
+}
+
+.buy a{
+    text-decoration: none;
+    color:black;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding-right: 5px;
+}
+
