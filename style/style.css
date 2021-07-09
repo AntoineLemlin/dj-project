@@ -33,8 +33,11 @@ header {
 .homepage-banner {
     display: flex;
     flex-direction: row;
-    width: 100%;
+    justify-content: center;
+    width: 90%;
     padding-top: 30px;
+    max-width: 90%;
+    flex-wrap: wrap;
 }
 
 .homepage-banner a{
@@ -44,41 +47,41 @@ header {
 
 .logo {
     margin-left: 15%;
-    margin-top: 1rem;
+    margin-top: 2rem;
     height: 50px;
     width: 300px;
+    margin-right: auto;
 }
 
 .logo img{
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 100%;
 }
 
 .homepage-nav {
     font-family: 'Poppins', sans-serif;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    margin-left: 5%;
     align-items: center;
+    transition: all 0.25s;
 }
 
 .li-nav, .r-soc {
     color: white;
     margin-top: 2rem;
-    display: flex;
-    flex-direction: row;
+   
     list-style-type: none;
     display: flex;
     align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .r-soc{
-    margin-left: 5%;
     margin-bottom: 10px;
 }
 .li-nav-item {
-    margin-left: 5rem;
+    margin-left: 7vh;
     font-size: 1rem;
     font-weight: 700;
     line-height: 1px;
@@ -183,6 +186,7 @@ header {
     color: white;
     font-family: Poppins;
     font-size: 25px;
+    margin-left: 1vh;
 }
 
 .musicbar{
@@ -192,6 +196,37 @@ header {
 
 /* BURGER MENU */
 
+.toggler{
+    z-index: 2;
+    position: absolute;
+    top: 6vh;
+    right: 2vh;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+}
+
+
+.hamburger{
+    position: absolute;
+    top: 6vh;
+    right: 2vh;    
+    z-index: 1;
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/hamburger.png);
+    background-size: cover;
+    filter: invert(100%) saturate(3207%) hue-rotate(0deg) brightness(95%) contrast(80%);    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+}
+.toggler:checked ~ .homepage-banner .homepage-nav{
+    opacity: 0;
+    transform: translateX(200px);
+}
 
 /* BURGER MENU */
 
@@ -208,13 +243,14 @@ header {
     height: auto;
     background-color: #202020;
     position: absolute;
-    left: 8%;
+    left: 5.5%;
     top: 102%;
     border-radius: 10px;
-    padding: 50px 0 65px 0;
+    padding: 50px 2vw 65px 2vw;
     overflow: hidden;
     z-index: 1;
     box-shadow: 0 5px 10px 0 darkslategray;
+    flex-wrap: wrap;
 }
 
 .next-gig::before{
@@ -247,36 +283,36 @@ header {
 
 
 .next-gig .text{
-    width: 200px;
+    width: 15vw;
     height: auto;
     font-family: Poppins;
 }
 
 .next-gig h3{
-        font-size: 45px;
+        font-size: 2vw;
         font-weight: 500;
         text-transform: capitalize;
 }
 
 .next-gig p{
-    font-size: 15px;
+    font-size: 1.5vw;
     font-weight: 300;
     line-height: 30px;
 }
 
 .next-gig .countdown h2{
     font-family: Poppins;
-    font-size: 90px;
+    font-size: 4vw;
     font-weight: 400;
 }
 
 .next-gig .countdown h5{
     font-family: Poppins;
-    font-size: 15px;
+    font-size: 2vw;
     font-weight: 700;
     text-transform: uppercase;
     line-height: 10px;
-    margin-top: -15px;
+    margin-top: 1vh;
     opacity: 0.7;
 }
 
@@ -333,7 +369,7 @@ p.text-about-dj-angerone{
     margin: 1.25rem;
     margin-left: 3rem;
     margin-bottom: 3rem;
-    width: 500px;
+    width: auto;
     
 }
 
@@ -396,7 +432,7 @@ p.text-about-dj-angerone{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 28.125rem;
+    height: 45vh;
     width: 100%;
     background-image: url(../img/homepage-latest-releases-background.jpg);
     background-size: cover;
@@ -538,14 +574,12 @@ p.text-about-dj-angerone{
     justify-content: center;
     align-items: center;
     margin-right: 200px;
-    flex-wrap: wrap;
 }
 
 .row{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
 }
 
 .row1{
@@ -1203,3 +1237,123 @@ button[type=submit]{
 
 /* GALLERY */
 
+
+@media only screen and (max-width: 768px){
+    .background{
+        background-size: cover;
+    }
+
+    .background header{
+        display: none;
+    }
+    
+    .intro{
+        height: auto;
+        padding-top: 105px;
+        margin: 0;
+    }
+
+    .feel-the-rhythm{
+        font-size: 8vw;
+    }
+
+    .feel-the-rhythm, .new-single{
+        margin: 0;
+    }
+
+    #audioplayer{
+        margin: 0;
+    }
+
+    .musicTime{
+        font-size: 2vw;
+        width: 100px;
+        height: auto;
+    }
+
+    .next-gig{
+        top: 450px;
+        flex-direction: column;
+        width: 90%;
+        left: 5%;
+        padding: 25px 0;
+    }
+
+    .next-gig .text{
+        width: 100%;
+        text-align: center;
+    }
+    .next-gig .countdown div h2{
+        font-size: 7vw;
+    }
+    .next-gig .countdown .countdown-days{
+        margin: 0;
+    }
+
+    .next-gig p{
+        font-size: 1.8vw;
+    }
+
+    .next-gig h3{
+        font-size: 4vw;
+    }
+
+    .next-gig .countdown{
+        margin-top: 1vh;
+    }
+
+    .next-gig .countdown div{
+        margin-left: 10vw;
+    }
+
+    .next-gig .countdown div h5{
+        font-size: 1.5vw;
+    }
+
+    .btn-buy-tickets{
+        margin: 0;
+        padding: 2vh 25vw;
+        margin-top: 3vh;
+        margin-bottom: 0;
+    }
+
+    .img-dj{
+        width: 270px;
+        height: 180px;
+        margin-right: 10px;
+    }
+    .about-dj-angerone{
+        align-items: flex-start;
+        padding: 407px 0 90px 0
+    }
+    .text-about-dj-angerone{
+        width: 45%;
+        text-align: left;
+        word-wrap: break-word;
+    }
+
+    .text-about-dj-angerone h2{
+        font-size: 3vw;
+    }
+
+    .text-about-dj-angerone p{
+        font-size: 2vw;
+    }
+
+    .view-discography h2{
+        font-size: 4vw;
+    }
+
+    .join-fan-base{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .join-fan-base .pictures{
+        margin-right: 0;
+    }
+
+    #container-schedule{
+        width: 95%;
+    }
+    }
