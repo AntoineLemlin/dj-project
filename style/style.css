@@ -88,7 +88,7 @@ header {
 .new-single {
     color: white;
     font-family: 'Poppins', sans-serif;
-    font-size: 1.6rem;
+    font-size: 2rem;
 }
 
 .new-single, .feel-the-rhythm{
@@ -103,6 +103,7 @@ header {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-bottom: 50px;
 }
 
 .feel-the-rhythm {
@@ -202,7 +203,7 @@ header {
     background-color: #202020;
     position: absolute;
     left: 8%;
-    top: 100%;
+    top: 102%;
     border-radius: 10px;
     padding: 50px 0 65px 0;
     overflow: hidden;
@@ -818,3 +819,95 @@ p.text-about-dj-angerone{
     display: inline-block;
 }
 
+.recent-news{
+    width: 100%;
+    height: auto;
+    padding: 125px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: Poppins;
+
+}
+
+.recent-news h2{
+    font-size: 35px;
+    font-family: Poppins;
+}
+
+.news{
+    width: auto;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin: 70px 0;
+    flex-wrap: wrap;
+}
+
+.new{
+    width: 370px;
+    height: auto;
+    background-color: white;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 30px 0 0px 0;
+    margin: 0 0 25px 25px;
+}
+
+.new h5{
+    background-color: #8121e0;
+    padding: 3px 7px;
+    border-radius: 5px;
+    margin: 0 0 0 30px;
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.new h4{
+    width: 340px;
+    height: auto;
+    margin: 25px 0 0 30px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.new p{
+    width: 340px;
+    height: auto;
+    margin: 25px 0 50px 30px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.new a{
+    margin: 0 0 0 30px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    color: #282828;
+}
+
+.new2{
+    background-image: url(../img/homepage-news-background.jpg);
+    background-size: cover;
+    color: white;
+}
+
+.new2 a{
+    color: white;
+}
+
+.recent-news .dots i{
+    margin-left: 30px;
+    font-size: 15px;
+}
+
+.recent-news .dots i:nth-child(2){
+    color: grey;
+}
