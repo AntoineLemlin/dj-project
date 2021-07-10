@@ -42,6 +42,7 @@ header {
     padding-top: 30px;
     max-width: 90%;
     flex-wrap: wrap;
+    overflow: hidden;
 }
 
 .homepage-banner a{
@@ -1267,6 +1268,7 @@ button[type=submit]{
 
 
 @media only screen and (max-width: 768px){
+    
     .background{
         background-size: cover;
     }
@@ -1306,6 +1308,7 @@ button[type=submit]{
         font-size: 25px;
         height: 100%;
         z-index: 3;
+        
     }
 
     header .li-nav, header .r-soc{
@@ -1460,6 +1463,10 @@ button[type=submit]{
         justify-content: space-between;
     }
 
+    .logos-container li{
+        margin-left: 2rem;
+    }
+
     .join-fan-base{
         flex-direction: column;
         justify-content: center;
@@ -1525,12 +1532,14 @@ button[type=submit]{
 
 .footer-soc li{
     margin-left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 footer h5{
     margin-bottom: 65px;
+}
+
+.toggler:checked ~ .homepage-banner .homepage-nav{
+    opacity: 0;
+    transform: translateX(-400px);
 }
     }
