@@ -13,14 +13,15 @@
 <body>
     <main>
         <div class="background" id="home">
-            <header>
+            <header id="header">
                 <div class="hamburger"></div>
 
-                    <input id="ham" type="checkbox" class="toggler"> 
+                    <input id="ham" type="checkbox" class="toggler" checked> 
                     <label for="ham"></label>
                 
                 <div class="homepage-banner">
                 <div class="logo"><img src="img/logo.png" alt="logo"></div>
+                <div class="dotsmenu"><img src="img/dots.png" alt=""></div>
                     <nav class="homepage-nav">
                         <ul class="li-nav">
                             <li class="li-nav-item"><a href="">ABOUT</a></li>
@@ -168,35 +169,31 @@
                 <h2>Join the Fanbase</h2>
                 <p>Take your chance to join DJ Angerone's fan club to receive exclusive tracks, free downloads, and other great offers.</p>
 
-                <article class="join-articles">
-                    <i class="fas fa-compact-disc"></i>
-
-                    <div class="text">
-                        <h3>Exclusive Releases</h3>
-                        <p>Get access to unreleased albums and EPs before they are published.</p>
-                    </div>
-
-                </article>
-
-                <article class="join-articles">
-                    <i class="fas fa-compact-disc"></i>
-
-                    <div class="text">
-                        <h3>Full DJ Sets & podcasts</h3>
-                        <p>Listen and download full sets and podcasts with tracklists by DJ Angerone.</p>
-                    </div>
-
-                </article>
-
-                <article class="join-articles">
-                    <i class="fas fa-compact-disc"></i>
-
-                    <div class="text">
-                        <h3>Free Downloads</h3>
-                        <p>Free tracks and remixes are regularly published for DJ Angerone's fan club.</p>
-                    </div>
+                <div class="join-text-article">
+                    <article class="join-articles">
+                        <i class="fas fa-compact-disc"></i>
+                        <div class="text">
+                            <h3>Exclusive Releases</h3>
+                            <p>Get access to unreleased albums and EPs before they are published.</p>
+                        </div>
+                    </article>
+                    <article class="join-articles">
+                        <i class="fas fa-compact-disc"></i>
+                        <div class="text">
+                            <h3>Full DJ Sets & podcasts</h3>
+                            <p>Listen and download full sets and podcasts with tracklists by DJ Angerone.</p>
+                        </div>
+                    </article>
+                    <article class="join-articles">
+                        <i class="fas fa-compact-disc"></i>
+                        <div class="text">
+                            <h3>Free Downloads</h3>
+                            <p>Free tracks and remixes are regularly published for DJ Angerone's fan club.</p>
+                        </div>
+               
 
                 </article>
+                 </div>
 
             </aside>
         </section>
@@ -350,6 +347,14 @@
 
         </section>
 
+        <section class="subscribe-to-stay-informed">
+            <h2>Subscribe to Stay Informed</h2>
+            <form class="sub-form">
+                <input type="email" id="email" pattern=".+@globex\.com" required placeholder="Your E-mail">
+                <button type="submit">SUBSCRIBE</button>
+            </form>
+        </section>
+
         <footer>
             <div class="logo-footer"><img src="img/logo.png" alt=""></div>
             <nav>
@@ -373,19 +378,9 @@
             
         </footer>
 
-        <a class="btn-up" href="#home">^</a>
+        <a class="btn-up" href="#header">^</a>
     </main>
     <script src="https://kit.fontawesome.com/1451049f14.js" crossorigin="anonymous"></script>
-
-<section class="subscribe-to-stay-informed">
-    <h2>Subscribe to Stay Informed</h2>
-    <form class="sub-form">
-        <input type="email" id="email" pattern=".+@globex\.com" required placeholder="Your E-mail">
-        <button type="submit">SUBSCRIBE</button>
-    </form>
-</section>
-
-
 </body>
 </html>
 
