@@ -13,7 +13,7 @@ main{
     overflow-x: hidden;
 
 }
-.background{
+.index-background{
     background-image: url(../img/homapage-banner-img.jpg);
     background-position: center;
     background-size: cover;
@@ -1341,7 +1341,7 @@ button[type=submit]{
     .dotsmenu{
         position: absolute;
         top: 15px;
-        right: 5px;
+        right: 2px;
         display: inline-block;
     }
     
