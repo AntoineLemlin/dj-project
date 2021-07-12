@@ -1891,7 +1891,8 @@ footer h5{
         flex-wrap: nowrap;
         justify-content: flex-start;
         margin: auto;
-        width: 100%;
+        padding-left: 20px;
+
     }
 
     .news .new1{
