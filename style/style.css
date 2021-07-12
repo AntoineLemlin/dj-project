@@ -1950,3 +1950,61 @@ footer h5{
 
 }
 
+/* GALLERY PAGE */
+
+.background-gallery-page {
+    display: flex;
+    height: 45vh;
+    width: 100%;
+    background-image: url(../img/banner-img.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+header {
+    font-family: Poppins;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titre-gallery-page {
+    font-size: 1.5rem;
+    margin-top: 30px;
+}
+
+.ul-gallery-page {
+    margin-top: 20px;
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    text-align: center;
+}
+
+.li-gallery-page {
+    margin-left: 2rem;
+}
+
+.gallery-container {
+    background-color: tomato;
+    margin: 120px auto 120px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.item-gallery {
+    width: 450px;
+    height: 360px;
+    margin: 10px;
+}
+
+.item-gallery img {
+    width: 100%;
+    height: auto;
+}
