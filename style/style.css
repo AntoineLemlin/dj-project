@@ -1975,6 +1975,11 @@ footer h5{
         margin-left: 20px;
     }
 
+
+
+    /* Tour Schedule */
+
+
 }
 
 
@@ -2085,4 +2090,22 @@ header {
     display: inline-block; 
     width: 1em; 
     margin-left: -1em; 
+  }
+
+
+  @media  screen and (max-width: 480px) {
+      
+    .other-background{
+        background-position: top right;
+        background-size: 300%;
+    }
+
+    .header-text h2{
+        font-size: 20px;
+    }
+
+    .header-text{
+        padding: 30px 0;
+    }
+
   }
