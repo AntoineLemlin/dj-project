@@ -1131,6 +1131,7 @@ p.text-about-dj-angerone{
     height: 500px;
     background-image: url(../img/homepage-footer-background.jpg);
     background-size: cover;
+    padding-bottom: 150px;
 }
 
 .subscribe-to-stay-informed h2{
@@ -1141,6 +1142,7 @@ p.text-about-dj-angerone{
     font-weight: 600;
     font-size: 35px;
 }
+
 
 input[type=email]{
     align-items: center;
