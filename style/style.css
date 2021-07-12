@@ -631,7 +631,6 @@ p.text-about-dj-angerone{
     text-align: center;
     font-size: 36px;
     margin-top: 50px;
-    margin-bottom: 50px;
     height: auto;
 }
 
@@ -642,12 +641,14 @@ p.text-about-dj-angerone{
     flex-wrap: wrap;
     flex-direction: row;
     margin: auto;
-    height: 700px;
+    height: auto;
     max-width: 1000px;
     border: solid grey 0.5px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     margin-bottom: 100px;
+    margin-top: 50px;
+    box-shadow: 1px 1px 10px 0 #444444;
 }
 
 .months{
@@ -661,8 +662,10 @@ p.text-about-dj-angerone{
     font-weight: bold;
     height: auto;
     margin: 0 auto;
-    padding: 20px 0;
-    width: 1000px;
+    padding: 35px 0;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .march:hover{
@@ -685,6 +688,16 @@ p.text-about-dj-angerone{
     border-left: 0.2px solid lightslategray;
     position: relative;
     width: 600px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.timeline-content .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .timeline-content:before{
@@ -701,15 +714,14 @@ p.text-about-dj-angerone{
 }
 
 .date{
-    margin: auto;
     padding: 10px;
-    padding-left: 0px;
     font-size: 20px;
     color: gray;
 }
 
 .timeline-content h3{
-    font-size: 18px;
+    font-size: 23px;
+    font-weight: 500;
 }
 
 
@@ -727,7 +739,8 @@ p.text-about-dj-angerone{
     font-size: 15px;
     font-weight: 600;
     text-transform: capitalize;
-    margin: 20px 0;
+    margin: 20px 20px;
+    white-space: nowrap;
 }
 
 .pic2::before{
@@ -1536,6 +1549,10 @@ button[type=submit]{
         margin-bottom: 0;
     }
 
+    .timeline-content .text{
+        max-width: 300px;
+    }
+
     .img-dj{
         width: 270px;
         height: 180px;
@@ -1623,7 +1640,7 @@ button[type=submit]{
     }
 
     #container-schedule{
-        width: 90%;
+        width: 100%;
     }
 
     .partners h2{
@@ -1792,7 +1809,7 @@ footer h5{
         margin-right: 0;
     }
 
-    .text{
+   .join-text .text{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1829,21 +1846,28 @@ footer h5{
     }
 
     .timeline-date{
-        width: 80%;
+        width: 100%;
         height: auto;
     }
 
     .timeline-content{
         width: 60%;
-        
     }
+
 
     .timeline-content div{
         width: 100%;
     }
 
+    .timeline-content{
+        flex-direction: column;
+    }
     .partners h2{
         font-size: 25px;
+    }
+
+    .buy{
+        margin-left: 0;
     }
 
 
@@ -1953,7 +1977,9 @@ footer h5{
 
 }
 
-/* GALLERY PAGE */
+
+
+GALLERY PAGE
 
 .background-gallery-page {
     display: flex;
@@ -1979,7 +2005,7 @@ header {
     margin-top: 30px;
 }
 
-.ul-gallery-page {
+ .ul-gallery-page {
     margin-top: 20px;
     font-size: 0.8rem;
     display: flex;
@@ -1990,7 +2016,7 @@ header {
 
 .li-gallery-page {
     margin-left: 2rem;
-}
+} 
 
 .gallery-container {
     background-color: tomato;
@@ -2011,3 +2037,51 @@ header {
     width: 100%;
     height: auto;
 }
+
+/* TOUR SCHEDULE PAGE */
+
+.other-background{
+    background-image: url(../img/banner-img.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    height: auto;
+    padding: 190px 0;
+    text-transform: uppercase;
+    font-family: Poppins;
+}
+
+.header-text h2{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.header-text .path{
+    display: flex;
+    flex-direction: row;
+}
+
+.header-text .path ul li{
+    margin-left: 30px;
+}
+
+.color-bullet{
+    list-style: none;
+}
+
+.color-bullet::before {
+    content: "\2022"; 
+    color: orange;
+    font-weight: bold; 
+    display: inline-block; 
+    width: 1em; 
+    margin-left: -1em; 
+  }
