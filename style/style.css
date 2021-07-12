@@ -687,7 +687,7 @@ p.text-about-dj-angerone{
     padding-left: 60px;
     border-left: 0.2px solid lightslategray;
     position: relative;
-    width: 600px;
+    max-width: 600px;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -739,7 +739,7 @@ p.text-about-dj-angerone{
     font-size: 15px;
     font-weight: 600;
     text-transform: capitalize;
-    margin: 20px 20px;
+    margin: 20px 0;
     white-space: nowrap;
 }
 
@@ -1549,6 +1549,9 @@ button[type=submit]{
         margin-bottom: 0;
     }
 
+    .timeline-content{
+        max-width: 400px;
+    }
     .timeline-content .text{
         max-width: 300px;
     }
@@ -1640,7 +1643,7 @@ button[type=submit]{
     }
 
     #container-schedule{
-        width: 100%;
+        width: 90%;
     }
 
     .partners h2{
