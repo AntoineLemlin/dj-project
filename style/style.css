@@ -387,7 +387,6 @@ p.text-about-dj-angerone{
     margin-left: 3rem;
     margin-bottom: 3rem;
     width: auto;
-    
 }
 
 
@@ -1801,9 +1800,11 @@ footer h5{
     .tour-schedule{
         height: auto;
     }
+
     .tour-schedule h2{
         font-size: 22px;
     }
+
     #container-schedule{
         width: 90%;
         height: auto;
@@ -1843,7 +1844,6 @@ footer h5{
     .partners h2{
         font-size: 25px;
     }
-
 
     .logos-container li{
         display: none;
@@ -1954,7 +1954,7 @@ footer h5{
 
 .background-gallery-page {
     display: flex;
-    height: 45vh;
+    height: 50vh;
     width: 100%;
     background-image: url(../img/banner-img.jpg);
     background-position: center;
@@ -1973,7 +1973,6 @@ header {
 
 .titre-gallery-page {
     font-size: 1.5rem;
-    margin-top: 30px;
 }
 
 .ul-gallery-page {
@@ -1985,12 +1984,16 @@ header {
     text-align: center;
 }
 
+.ul-gallery-page a {
+    text-decoration: none;
+    color: white;
+}
+
 .li-gallery-page {
     margin-left: 2rem;
 }
 
 .gallery-container {
-    background-color: tomato;
     margin: 120px auto 120px;
     display: flex;
     flex-wrap: wrap;
@@ -1998,10 +2001,37 @@ header {
     justify-content: center;
 }
 
+.gallery-container div:before{
+    content: "zoom";
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 0 0 15px rgba(0, 0, 0, 0.3);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: -50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    transition: all 0.25s ;
+}
+
+.gallery-container div:hover:before{
+    opacity: 1;
+}
+
 .item-gallery {
     width: 450px;
     height: 360px;
     margin: 10px;
+    position: relative;
 }
 
 .item-gallery img {
