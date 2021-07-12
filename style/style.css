@@ -660,9 +660,9 @@ p.text-about-dj-angerone{
     flex-grow: 2;
     font-size: 18px;
     font-weight: bold;
-    height: 50px;
+    height: auto;
     margin: 0 auto;
-    padding-top: 8px;
+    padding: 20px 0;
     width: 1000px;
 }
 
@@ -721,14 +721,14 @@ p.text-about-dj-angerone{
     padding-top: 20px;
 }
 
-.buy a{
+.buy {
     text-decoration: none;
     color:black;
     float: right;
     font-size: 15px;
     font-weight: 600;
     text-transform: capitalize;
-    padding-right: 5px;
+    margin: 20px 0;
 }
 
 .pic2::before{
@@ -864,6 +864,10 @@ p.text-about-dj-angerone{
     margin-left: 2rem;
 }
 
+.partners .dots i:nth-child(4){
+    display: none;
+}
+
 .partners .dots i:nth-child(1){
     color: #8121e0;
     opacity: 1;
@@ -931,7 +935,7 @@ p.text-about-dj-angerone{
     flex-direction: column;
     align-items: center;
     width: 368px;
-    height: 477px;
+    height: 377px;
 }
 
 .price-item h4 {
@@ -993,6 +997,25 @@ p.text-about-dj-angerone{
     height: 300px; 
     display: inline-block;
 }
+
+.tickets .dots i{
+    font-size: 13px;
+    color: grey;
+    opacity: 0.3;
+    margin-left: 2rem;
+    margin-bottom: 100px;
+}
+
+.tickets .dots i:nth-child(2){
+    color: black;
+}
+
+.tickets .dots{
+    display: none;
+    margin-left: -20px;
+}
+
+
 
 /* Recent News */
 
@@ -1083,6 +1106,16 @@ p.text-about-dj-angerone{
 .recent-news .dots i{
     margin-left: 30px;
     font-size: 15px;
+    display: none;
+}
+.recent-news .dots i:nth-child(3), .recent-news .dots i:nth-child(4){
+    display: inline-block;
+    
+}
+
+.recent-news .dots {
+    width: 100%;
+    text-align: center;
 }
 
 .recent-news .dots i:nth-child(2){
@@ -1192,7 +1225,7 @@ footer h5{
 .subscribe-to-stay-informed{
     margin: auto;
     text-align: center;
-    height: 500px;
+    height: auto;
     background-image: url(../img/homepage-footer-background.jpg);
     background-size: cover;
 }
@@ -1249,6 +1282,7 @@ button[type=submit]{
     width: 33.33333%;
     max-height: 350px;
     overflow: hidden;
+    position: relative;
 }
 
 .gallery-item4, .gallery-item5 {
@@ -1263,6 +1297,34 @@ button[type=submit]{
     height: 100%;
     overflow: hidden;
 }
+
+.gallery div:before{
+    content: "zoom";
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 0 0 15px rgba(0, 0, 0, 0.3);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: -50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    transition: all 0.25s ;
+}
+
+.gallery div:hover:before{
+    opacity: 1;
+}
+
+
 
 /* GALLERY */
 
@@ -1543,3 +1605,293 @@ footer h5{
     transform: translateX(-400px);
 }
     }
+
+
+@media only screen and (max-width: 480px) {
+    .musicTime{
+        font-size: 18px;
+    }
+
+    .logo{
+        margin-left: 20%;
+    }
+
+    header{
+        background-color: #202020;
+    }
+
+    .text-homepage{
+        margin-top: 70px;
+    }
+
+    .next-gig .text h3{
+        font-size: 25px;
+    }
+
+    .next-gig .text p{
+        font-size: 15px;
+    }
+    .next-gig .countdown .countdown-seconds{
+        display: none;
+    }
+
+    .next-gig .countdown div h2{
+        font-size: 35px;
+    }
+
+    .next-gig .countdown div h5{
+        font-size: 12px;
+    }
+
+    .about-dj-angerone{
+        flex-direction: column;
+        padding: 250px 0 50px 0;
+        align-items: center;
+    }
+
+    .text-about-dj-angerone{
+        width: 80%;
+        text-align: left;
+        margin-top: 20px;
+    }
+
+    .text-about-dj-angerone h2{
+        font-size: 25px;
+    }
+
+    .text-about-dj-angerone p{
+        font-size: 15px;
+    }
+
+    .img-dj{
+        height: auto;
+        width: 90%;    
+    }
+
+    .btn-up{
+        display: none;
+    }
+
+    .view-discography {
+        height: 257px;
+    }
+
+    .view-discography h2 {
+        font-size: 23px;
+        width: 80%;
+    }
+
+    .view-discography a{
+        margin: 15px 0;
+    }
+
+    .pictures{
+        width: 80%;
+        height: auto;
+        margin-right: 0;
+    }
+
+    .pic1{
+        margin-bottom: 100px;
+        margin-left: 100px;
+        padding: ;
+    }
+
+    .pic3{
+        margin-left: -80px;
+    }
+    
+    .row{
+        flex-direction: column;
+    }
+
+    .join-fan-base{
+        padding: 50px 0 90px 0;
+    }
+
+    .join-fan-base h2{
+        margin-top: 30px;
+    }
+
+    .join-fan-base p{
+        width: 85%;
+    }
+
+    .join-text-article .join-articles{
+        flex-direction: column;
+        margin-left: 0;
+        align-items: center;
+        justify-content: center;
+        margin-right: 0;
+        
+    }
+
+    .join-text-article{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .join-articles i{
+        margin-right: 0;
+    }
+
+    .text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .tour-schedule{
+        height: auto;
+    }
+    .tour-schedule h2{
+        font-size: 22px;
+    }
+    #container-schedule{
+        width: 90%;
+        height: auto;
+    }
+
+    #container-schedule .months {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #container-schedule .months p{
+        height: auto;
+        padding: 10px 0;
+        width: 75%;
+    }
+
+    #container-schedule .months p:nth-child(1){
+        border-bottom: 5px solid #8121e0;
+        color: white;
+    }
+
+    .timeline-date{
+        width: 80%;
+        height: auto;
+    }
+
+    .timeline-content{
+        width: 60%;
+        
+    }
+
+    .timeline-content div{
+        width: 100%;
+    }
+
+    .partners h2{
+        font-size: 25px;
+    }
+
+
+    .logos-container li{
+        display: none;
+        margin: 0;
+    }
+
+    .logos-container li:nth-child(1){
+        display: inline-block;
+    }
+
+    .partners .dots i:nth-child(4){
+        display: inline-block;
+    }
+
+    .tickets .price{
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+
+    .tickets .dots{
+        display: inline-block;
+    }
+
+    .gallery{
+        flex-direction: column;
+        max-height:unset;
+        flex-wrap: nowrap;
+        height: auto;
+    }
+
+    .gallery div{
+        width: 100%;
+        height: auto;
+
+    }
+
+    .gallery div img{
+        height: auto;
+    }
+
+    .news{
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        margin: auto;
+        width: 100%;
+    }
+
+    .news .new1{
+        margin: 0;
+    }
+
+    .recent-news .dots i{
+        display: inline-block;
+        color: grey;
+    }
+
+    .recent-news .dots i:nth-child(1){
+        color: #202020;
+    }
+
+    .recent-news h2{
+        font-size: 25px;
+    }
+
+    .recent-news {
+        padding: 100px 0;
+    }
+    .subscribe-to-stay-informed{
+        padding: 100px 0;
+    }
+    .subscribe-to-stay-informed h2{
+        font-size: 25px;
+        width: 80%;
+        margin: auto;
+        padding: 0;
+    }
+
+    .subscribe-to-stay-informed form #email{
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .subscribe-to-stay-informed form button{
+        width: 80%;
+        margin-bottom: 20px;
+        margin: auto;
+    }
+
+    .footer-nav{
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .footer-nav li{
+        margin-bottom: 10px;
+        margin-left: 0;
+    }
+
+    .footer-soc li a{
+        margin-left: 20px;
+    }
+
+}
+
