@@ -430,6 +430,25 @@ header {
 	width: 570px;
 }
 
+.quote-about-dj-angerone{
+    position: relative;
+    z-index: 1;
+}
+
+.quote-about-dj-angerone::before{
+    content: "";
+    width: 180px;
+    height: 150px;
+    background-image: url(../img/guillemets.png);
+    background-size: cover;
+
+    position: absolute;
+    top: -40px;
+    left: -75px;
+    opacity: 0.4;
+    z-index: 0;
+}
+
 .title-about-dj-angerone {
 	color: #282828;
 	font-size: 36px;
@@ -2411,6 +2430,7 @@ header {
     .phone, .email{
         white-space: nowrap;
     }
+    
 
     .contact{
         flex-direction: column;
@@ -2420,4 +2440,6 @@ header {
         flex-direction: column;
         text-align: center;
     }
+
+
 }
