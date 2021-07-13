@@ -2031,6 +2031,7 @@ button[type=submit] {
 	.footer-soc li a {
 		margin-left: 20px;
 	}
+
 }
 
 
@@ -2406,4 +2407,17 @@ header {
 	.header-text {
 		padding: 30px 0;
 	}
+
+    .phone, .email{
+        white-space: nowrap;
+    }
+
+    .contact{
+        flex-direction: column;
+    }
+
+    .join-fan-base-2 .join-articles{
+        flex-direction: column;
+        text-align: center;
+    }
 }
