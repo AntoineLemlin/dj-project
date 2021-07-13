@@ -2392,3 +2392,37 @@ header {
     font-size: 15px;
     font-weight: 200;
 }
+
+.join-fan-base-2{
+    background-image: url(../img/bg-circle-2.png);
+    background-size: contain;
+    background-position: center;
+    background-color: #F5F5F5;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 130px 0;
+    font-family: Poppins;
+   
+}
+
+.container-fan-base-2{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.join-fan-base-2 .join-articles{
+    width: 335px;
+    height: auto;
+    margin-left: 70px;
+}
+
+.join-fan-base-2 h2{
+    font-family: Poppins;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
