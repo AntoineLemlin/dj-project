@@ -1374,7 +1374,7 @@ button[type=submit]{
     flex-wrap: wrap;
     justify-content: center;
     
-  }
+}
 
 
 .gallery-item1, .gallery-item2, .gallery-item3 {
@@ -2041,8 +2041,6 @@ footer h5{
 
 }
 
-
-
 GALLERY PAGE
 
 .background-gallery-page {
@@ -2088,6 +2086,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    height: 100%;
     justify-content: center;
 }
 
@@ -2378,6 +2377,7 @@ header{
 
 .color-bullet{
     list-style: none;
+    text-decoration: none;
 }
 
 .color-bullet::before {
@@ -2387,7 +2387,7 @@ header{
     display: inline-block; 
     width: 1em; 
     margin-left: -1em; 
-  }
+}
 
 .disco-title a{
     text-decoration: none;
