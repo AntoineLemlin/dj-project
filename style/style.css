@@ -239,9 +239,38 @@ header {
     justify-content: center;
     margin-left: 50px;
 }
-.toggler:checked ~ .homepage-banner .homepage-nav{
+.toggler:checked ~ .homepage-banner .homepage-nav {
+    transform: translateX(-400px);
+}
+
+
+.toggler-dots{
+    z-index: 2;
+    position: absolute;
+    top: 6vh;
+    right: 2vh;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
     opacity: 0;
-    transform: translateX(400px);
+    display: none;
+}
+
+
+.hamburger-dots{
+    position: absolute;
+    top: 6vh;
+    right: 2vh;    
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/dots.png);
+    background-size: cover;
+    filter: invert(100%) saturate(3207%) hue-rotate(0deg) brightness(95%) contrast(80%);    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+    display: none;
 }
 
 /* BURGER MENU */
@@ -1430,7 +1459,16 @@ button[type=submit]{
         z-index: 4;
     }
 
-    .homepage-nav{
+    .hamburger-dots, #ham-dots {
+        top: 0;
+        right: 0;
+        margin-left: 0;
+        margin: 5px;
+        z-index: 4;
+        display: inline-block;
+    }
+
+    .li-nav{
         flex-direction: column;
         width: 80%;
         position: absolute;
@@ -1438,8 +1476,25 @@ button[type=submit]{
         left: 0;
         background-color: #202020;
         font-size: 25px;
-        height: 100%;
+        height: 100vh;
         z-index: 3;
+        margin-top: 0;
+        margin: 0;
+        
+    }
+
+    .r-soc{
+        flex-direction: column;
+        width: 80%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #202020;
+        font-size: 25px;
+        height: 100vh;
+        z-index: 3;
+        margin-top: 0;
+        margin: 0;
         
     }
 
@@ -1449,11 +1504,6 @@ button[type=submit]{
         justify-content: center;
         
     }
-
-    header .li-nav{
-        margin-top: 100px;
-    }
-
 
     header .li-nav-item, header .r-soc-item a{
         margin-left: 0;
@@ -1677,9 +1727,16 @@ footer h5{
     margin-bottom: 65px;
 }
 
-.toggler:checked ~ .homepage-banner .homepage-nav{
-    opacity: 0;
-    transform: translateX(-400px);
+.toggler:checked ~ .homepage-banner .homepage-nav .li-nav{
+    transform: translateX(-500px);
+}
+
+.toggler-dots:checked ~ .homepage-banner .homepage-nav .r-soc{
+    transform: translateX(500px);
+}
+
+.toggler:checked ~ .homepage-banner .homepage-nav {
+    transform: none;
 }
     }
 
