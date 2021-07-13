@@ -1345,7 +1345,7 @@ button[type=submit]{
     flex-wrap: wrap;
     justify-content: center;
     
-  }
+}
 
 
 .gallery-item1, .gallery-item2, .gallery-item3 {
@@ -1986,19 +1986,7 @@ footer h5{
 
 }
 
-
-
 GALLERY PAGE
-
-.background-gallery-page {
-    display: flex;
-    height: 50vh;
-    width: 100%;
-    background-image: url(../img/banner-img.jpg);
-    background-position: center;
-    background-size: cover;
-    position: relative;
-}
 
 header {
     font-family: Poppins;
@@ -2009,33 +1997,12 @@ header {
     justify-content: center;
 }
 
-.titre-gallery-page {
-    font-size: 1.5rem;
-}
-
- .ul-gallery-page {
-    margin-top: 20px;
-    font-size: 0.8rem;
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    text-align: center;
-}
-
-.ul-gallery-page a {
-    text-decoration: none;
-    color: white;
-}
-
-.li-gallery-page {
-    margin-left: 2rem;
-} 
-
 .gallery-container {
     margin: 120px auto 120px;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    height: 100%;
     justify-content: center;
 }
 
@@ -2115,6 +2082,7 @@ header {
 
 .color-bullet{
     list-style: none;
+    text-decoration: none;
 }
 
 .color-bullet::before {
@@ -2124,7 +2092,7 @@ header {
     display: inline-block; 
     width: 1em; 
     margin-left: -1em; 
-  }
+}
 
 
   @media  screen and (max-width: 480px) {
