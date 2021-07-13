@@ -2111,48 +2111,8 @@ header {
     background-repeat: no-repeat;
 }
 
-.header-text{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: white;
-    height: auto;
-    padding: 190px 0;
-    text-transform: uppercase;
-    font-family: Poppins;
-}
 
-.header-text h2{
-    font-size: 50px;
-    margin-bottom: 30px;
-    text-align: center;
-}
-
-.header-text .path{
-    display: flex;
-    flex-direction: row;
-}
-
-.header-text .path ul li{
-    margin-left: 30px;
-}
-
-.color-bullet{
-    list-style: none;
-}
-
-.color-bullet::before {
-    content: "\2022"; 
-    color: orange;
-    font-weight: bold; 
-    display: inline-block; 
-    width: 1em; 
-    margin-left: -1em; 
-  }
-
-
-  /* About us Page */
+/* About us Page */
 
 .text-about-us ul li i{
     color: black;
@@ -2302,3 +2262,183 @@ header {
     }
 
   }
+
+
+/* Discography */
+/* Header */
+
+.disco-background{
+    background-image: url(../img/banner-img.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header{
+    background-color: transparent;
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.homepage-banner{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 30px;
+    max-width: 90%;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.homepage-banner a{
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    margin-top: 2rem;
+    height: 50px;
+    width: 300px;
+    margin-right: auto;
+}
+
+.logo img{
+    width: auto;
+    height: 100%;
+}
+
+.homepage-nav {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: all 0.25s;
+}
+
+.li-nav, .r-soc {
+    color: white;
+    margin-top: 2rem;
+   
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.r-soc{
+    margin-bottom: 10px;
+}
+.li-nav-item {
+    margin-left: 7vh;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1px;
+    padding: 10px 0 ;
+}
+
+.r-soc-item a {
+    color: white;
+    opacity: 0.8;
+    font-size: 1.5rem;
+    margin-left: 2rem;
+}
+
+
+/* Discography */
+/* Title */
+
+.disco-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    height: auto;
+    padding-bottom: 200px;
+    text-transform: uppercase;
+    font-family: Poppins;
+}
+
+.disco-title h1{
+    font-size: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.disco-title .path{
+    display: flex;
+    flex-direction: row;
+}
+
+.disco-title .path ul li{
+    margin-left: 30px;
+}
+
+.color-bullet{
+    list-style: none;
+}
+
+.color-bullet::before {
+    content: "\2022"; 
+    color: orange;
+    font-weight: bold; 
+    display: inline-block; 
+    width: 1em; 
+    margin-left: -1em; 
+  }
+
+.disco-title a{
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
+}
+
+/* Discography */
+/* Albums */
+
+.disco{
+    font-family: Poppins;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5rem;
+    flex-wrap: wrap;
+    background-color: white;
+}
+
+.disco article{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    padding: 2vw;
+}
+
+.cover-disco{
+    width: 375px;
+    height: 375px;
+    margin-bottom: 20px;
+}
+
+.cover-disco img{
+    height: 100%;
+    width: auto;
+}
+
+.cover-disco img:hover{
+    box-shadow: 20px 10px 10px black;
+}
+
+.disco h4{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.disco h6{
+    font-size: 15px;
+    font-weight: 200;
+}
