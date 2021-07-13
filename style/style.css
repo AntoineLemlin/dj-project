@@ -2043,7 +2043,7 @@ footer h5{
 
 GALLERY PAGE
 
-.background-gallery-page {
+/*.background-gallery-page {
     display: flex;
     height: 45vh;
     width: 100%;
@@ -2051,7 +2051,8 @@ GALLERY PAGE
     background-position: center;
     background-size: cover;
     position: relative;
-}
+    }*/
+
 
 header {
     font-family: Poppins;
@@ -2062,7 +2063,7 @@ header {
     justify-content: center;
 }
 
-.titre-gallery-page {
+/*.titre-gallery-page {
     font-size: 1.5rem;
     margin-top: 30px;
 }
@@ -2078,10 +2079,9 @@ header {
 
 .li-gallery-page {
     margin-left: 2rem;
-} 
+}*/
 
 .gallery-container {
-    background-color: tomato;
     margin: 120px auto 120px;
     display: flex;
     flex-wrap: wrap;
@@ -2109,7 +2109,6 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
 }
-
 
 /* About us Page */
 
