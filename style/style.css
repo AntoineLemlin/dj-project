@@ -9,6 +9,9 @@
 
 /* HEADER */
 
+body{
+    overflow-x: hidden;
+}
 main{
     overflow-x: hidden;
 
@@ -1396,6 +1399,13 @@ button[type=submit]{
     height: 100%;
     overflow: hidden;
 }
+.gallery div img{
+    transition: all 0.25s;
+}
+
+.gallery div{
+    overflow: hidden;
+}
 
 .gallery div:before{
     content: "zoom";
@@ -1417,10 +1427,16 @@ button[type=submit]{
 
     opacity: 0;
     transition: all 0.25s ;
+    cursor: pointer;
+    z-index: 3;
 }
 
 .gallery div:hover:before{
     opacity: 1;
+}
+
+.gallery div img:hover{
+    transform: scale(1.5);
 }
 
 
@@ -1729,10 +1745,12 @@ footer h5{
 
 .toggler:checked ~ .homepage-banner .homepage-nav .li-nav{
     transform: translateX(-500px);
+    opacity: 0;
 }
 
 .toggler-dots:checked ~ .homepage-banner .homepage-nav .r-soc{
     transform: translateX(500px);
+    opacity: 0;
 }
 
 .toggler:checked ~ .homepage-banner .homepage-nav {
@@ -1974,7 +1992,7 @@ footer h5{
         flex-wrap: nowrap;
         justify-content: flex-start;
         margin: auto;
-        padding-left: 20px;
+        padding-left: 10px;
 
     }
 
@@ -2166,6 +2184,7 @@ header {
 
     opacity: 0;
     transition: all 0.25s ;
+    cursor: pointer;
 }
 
 .gallery-container div:hover:before{
