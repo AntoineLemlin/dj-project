@@ -27,7 +27,7 @@ You can find:
 
 In the future, you'll also find a ticket shop.
 
-**You can see the site with this link :**
+**You can see the site with this link : https://antoinelemlin.github.io/dj-project/**
 
 
 ## Code
