@@ -2089,6 +2089,14 @@ footer h5{
     margin-left: -1em; 
   } 
 
+.path ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.path ul li{
+    margin-left: 15px;
+}
 
 GALLERY PAGE
 
