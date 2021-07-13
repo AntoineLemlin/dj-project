@@ -594,6 +594,13 @@ p.text-about-dj-angerone {
 	font-weight: bold;
 	margin-top: 50px;
 	z-index: 1;
+    transition: all 0.5s ease-in;
+}
+
+.btn-view-disco:hover {
+    background-color: white;
+    color: #8121e0;
+    transform: rotate(359deg);
 }
 
 .view-discography::after {
@@ -2216,7 +2223,6 @@ header {
 	background-size: cover;
 	background-repeat: no-repeat;
 }
-
 
 /* About us Page */
 
