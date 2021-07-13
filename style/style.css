@@ -352,6 +352,14 @@ header {
 	font-size: 18px;
 	margin-left: 6rem;
 	white-space: nowrap;
+    transition: all 0.5s;
+    transition-timing-function: ease-in;
+}
+
+.btn-buy-tickets:hover{
+    background-color: white;
+    color: #8121e0;
+    transform: scale(1.1);
 }
 
 .next-gig .text {
@@ -2115,7 +2123,9 @@ button[type=submit] {
 	margin-left: 15px;
 }
 
-GALLERY PAGE .background-gallery-page {
+/* GALLERY PAGE  */
+
+.background-gallery-page {
 	display: flex;
 	height: 45vh;
 	width: 100%;
